@@ -1,0 +1,12 @@
+name: " Flask First App "
+on:
+    push:
+        branches:
+            - main
+            - master
+jobs:
+    python_app:
+        runs-on: ubuntu-latest
+        steps:
+            - name: "Print python version"
+              run: echo "python --version"
